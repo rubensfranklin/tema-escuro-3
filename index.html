@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itaú</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <main>
+        <label for="switch">
+            <input type="checkbox" id="switch">
+        </label>
+        <h1>Cadastre-se</h1>
+        <div class="logo">
+            <a href="#">
+                <img src="assets/img/itau-removebg-preview.png" alt="itau">
+            </a>
+            
+        </div>
+        <section>
+            <form id="formulario" method="post" > 
+              
+                <fieldset> <!--Colocar um ao lado do outro-->
+                    <div class="container">
+                        <input type="text" required name="nome" autofocus>
+                        <label>Nome</label> 
+                    </div>
+                </fieldset>
+    
+                <fieldset> <!--Colocar um ao lado do outro-->
+                    <div class="select">
+                        <label for="sexo">Sexo</label>
+                        <select name="sexo" id="sexo">
+                         <option value="0">-</option>
+                         <option value="M">Masculino</option>
+                         <option value="F">Feminino</option>
+                        </select>
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <div class="container">
+                        <input type="text"  name="rg" autofocus>
+                        <label>RG</label> 
+                    </div>
+                    <div class="container">
+                        <input type="integer" required name="cpf" id="cpf_digitado" onkeydown="javascript: mascaraCPF( this, maskCPF );" autofocus>
+                        <label>CPF</label> 
+                    </div>
+                </fieldset>
+    
+                <fieldset> <!--Colocar um ao lado do outro-->
+                    <div class="container">
+                        <input type="text" required name="rua" id="rua" autofocus>
+                        <label for="rua">Endereço</label> 
+                    </div>
+                    <div class="container">
+                        <input type="text" required name="numero" autofocus>
+                        <label>Numero</label> 
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <div class="container">
+                        <input type="text" required name="bairro" id="bairro" autofocus>
+                        <label for="bairro">Bairro</label> 
+                    </div>
+                    <div class="container">
+                        <input type="text" required name="cep" id="cep" maxlength="8" autofocus>
+                        <label for="cep">Cep</label> 
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <div class="container">
+                        <input type="text" name="cidade" id="cidade" autofocus>
+                        <label for="cidade">cidade</label> 
+                    </div>
+                    <div class="container">
+                        <input type="text" name="estado" id="estado" autofocus>
+                        <label for="estado">Estado</label> 
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <div class="container">
+                        <input type="text" name="telefone_fixo" maxlength="14" onKeyPress="MascaraGenerica(this, 'TELEFONE FIXO');" autofocus>
+                        <label>Telefone fixo</label> 
+                    </div>
+                    <div class="container">
+                        <input type="text" required name="telefone_celular" maxlength="15" onKeyPress="MascaraGenerica(this, 'TELEFONE CELULAR');" autofocus>
+                        <label>Telefone celular</label> 
+                    </div>
+                </fieldset>
+      
+            <input type="submit" value="cadastrar" id="button">
+        </form>
+    </main>
+    <section class="images">
+        <img src="assets/img/capa-removebg.png" alt="capa">
+        <div class="circle"></div>
+    </section>
+</body>
+
+
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/cPF.js"></script>
+<script src="./assets/js/cEP.js"></script>
+</html>

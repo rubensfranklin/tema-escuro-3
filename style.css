@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    
+    font-weight: 300;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+main {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: #FF4500;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+main.logo {
+    display: flex;
+    align-content: center;
+}
+
+main .logo a {
+    text-decoration: none;
+}
+
+main .logo img {
+    width: 150px;
+    height: 130px;
+    margin-left: 3rem;
+}
+
+main .logo a:first-child img {
+    margin-left: 0;
+}
+
+section {
+    display: flex;
+
+    
+    padding: 30px 5px; /* 30px superior e inferior -  5px para os lados */
+
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 15px;
+
+    max-width: 70vw;
+}
+
+section h1{
+    text-align: center;
+    font-size: 1.850rem;
+}
+
+section h3{
+    padding-top: 5px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset:nth-child(4) {
+    display: flex;
+}
+
+fieldset:nth-child(5) {
+    display: flex;
+}
+
+fieldset:nth-child(6) {
+    display: flex;
+}
+
+fieldset:nth-child(7) {
+    display: flex;
+}
+
+fieldset:nth-child(8) {
+    display: flex;
+}
+
+fieldset:nth-child(9) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container input {
+    margin: 10px 10px;
+
+    width: calc(100% - 20px);
+
+    height: 60px;
+
+    border: none;
+
+    background-color: #ededed;
+
+    border-radius: 4px;
+
+    color: #333;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    padding: 14px 10px 0 10px;
+}
+
+.container {
+    position: relative; /* relative - indica que esta posicionado em relacao a sua posicao normal */
+}
+
+.container label {
+    text-transform:  uppercase;
+
+    font-size: 14px;
+
+    font-weight: 700;
+    
+    color: #9d9d9d;
+
+    position: absolute; /* absolute - posiciona qualquer elmento de acordo com o elemento pai, deixando de fazer parte do fluxo comum do documento. */
+
+    line-height: 70px;
+
+    top: -7px; /* altura do texto da label */
+
+    left: 20px;
+
+    user-select: none;
+
+    pointer-events: none;
+
+    transition: 0.5s;
+}
+
+.select label {
+
+    margin-left: 10px;
+}
+
+
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    margin-top: 4rem;
+    border: none;
+    border-radius: 32px;
+    background: #FF4500;
+    color: white;
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+    background: #E8CBC0;
+}
+
+section.images {
+    width: 700px;
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 04rem;
+ margin-right: -20px;
+   
+ 
+}
+/*  tema escuro*/
+:root {
+    --body-bg: #fafafa;
+    --body-color: #555;
+    --link-color: #222;
+    --link-color-hover: #ec5840;
+  }
+
+.dark-mode:root {
+  --body-bg: #212529;
+  --body-color: #899095;
+  --link-color: #dee2e6;
+  --link-color-hover: #3cc368;
+}
+
+  body {
+    background-color: var(--body-bg);
+    color: var(--body-color);
+  }
+  
+  a {
+    color: var(--link-color);
+  }
+  
+  a:hover {
+    color: var(--link-color-hover);
+  }
+
+/* circulo gradiente*/
+section.images .circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #fff, #FF8C00);
+    clip-path: circle(50%);
+    z-index: -1;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    section.images img {
+        width: 110%;
+    }
+
+    section.images .circle {
+        clip-path: circle(35% at right 80%);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    section.images {
+        display: none;
+        visibility: hidden;
+    }
+
+    main {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main .alternative span {
+        font-size: 0.8rem;
+    }
+
+    main form label span, main form input[type="submit"] {
+        font-size: 1rem;
+    }
+}
