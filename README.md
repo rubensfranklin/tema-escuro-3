@@ -1,5 +1,5 @@
 <h1 align="center" >
-<img src = "./Formulario de Registro - Itau/img/client-itau-square-image-19-jun-27-400x400.jpg">
+<img src = "https://github.com/rubensfranklin/tema-escuro-3/blob/main/assets/img/Tai___Ita___Financeira-logo-64B5F96538-seeklogo.com.png">
 <p> Itaú Tech - Processo Seletivo</p>
 
 ## 🎯 <b>Objetivo</b>
