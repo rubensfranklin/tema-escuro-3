@@ -20,7 +20,7 @@ header label {
     
     background: #f1aa02;
    display: inline-flex;
-    margin-left: 2px;
+    margin-left: 5px;
   
 }
 main {
@@ -233,6 +233,7 @@ section.images .circle {
     z-index: -1;
 }
 
+
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
     section.images img {
         width: 110%;
@@ -254,16 +255,51 @@ section.images .circle {
     }
 }
 
-@media only screen and (max-width: 450px) {
-    main h1 {
+
+
+@media only screen and (max-width: 250px) {
+ 
+    section {
+        width: 55vw;
+    }
+
+
+    form {
+        width: 90%;
+       
+       
+    }
+
+    fieldset:nth-child(4),
+    fieldset:nth-child(5),
+    fieldset:nth-child(6),
+    fieldset:nth-child(7),
+    fieldset:nth-child(8),
+    fieldset:nth-child(9) {
+        flex-direction: column;
+    }
+
+    fieldset:nth-child(9) button {
+        width: 90%;
+        margin-left: 0;
+    }
+
+     h1 {
         font-size: 2rem;
     }
 
-    main .alternative span {
-        font-size: 0.8rem;
-    }
+    
 
-    main form label span, main form input[type="submit"] {
+     form label span, main form input[type="submit"] {
         font-size: 1rem;
     }
 }
+}
+
+
+
+
+
+
+
+
