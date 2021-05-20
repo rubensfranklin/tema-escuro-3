@@ -31,14 +31,14 @@ Cadastro Pessoal com os campos: Nome, Cpf, Rg, Sexo, Endereco, Numero, Bairro, C
 <br />
 
 
-##  Resultado da landing page desenvolvido para esse desafio. 
+##  Resultado 
 <br/>
-<img src="assets/final.png" alt="Web Version"/>
+<img src="assets/img/Captura de Tela (9).png" alt="Web Version"/>
 
 ### Mobile Version
-<img src="assets/final-mobile.png" alt="Mobile Version"/>
+<img src="assets/img/mobile.png" alt="Mobile Version"/>
 
-## 👍 <b> Referencias para o desenvolvimento deste landing page (form) </b>
+## Referencias que inspiraram este formulário 
 
 
 
@@ -49,21 +49,3 @@ Cadastro Pessoal com os campos: Nome, Cpf, Rg, Sexo, Endereco, Numero, Bairro, C
 * Consultar CEP com HTML, CSS e Javascript [Ver video](https://www.youtube.com/watch?v=fxnJffrnrdY)
 
 <br />
-
-* Site da W3schools.com [Ir para o site](https://www.w3schools.com/)
-
-<br />
-
-* Máscara para os campos telefone, cep e cpf [Ir para o site](http://codigododia.blogspot.com/2019/05/mascara-para-cpf-cnpj-cep-telefone-data.html)
-
-<br />
-
-* Como fazer um readme no GitHub para seu PROJETO [Ver video](https://www.youtube.com/watch?v=LDLK5OJw3io)
-
-<br />
-
-* How to use javascript to send a post request using the fetch api. [Ver video](https://www.youtube.com/watch?v=Fek_oJM_s4I&t=324s)
-
-<br />
-
-* Site da hookbin.com para fazer captura e inspeção HTTP request   [Ir para o site](https://hookbin.com/)
