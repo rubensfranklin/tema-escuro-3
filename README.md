@@ -1,25 +1,18 @@
 <h1 align="center" >
 <img src = "https://github.com/rubensfranklin/tema-escuro-3/blob/main/assets/img/Tai___Ita___Financeira-logo-64B5F96538-seeklogo.com.png">
-<p> Itaú Tech - Processo Seletivo</p>
+<p> Processo Seletivo - Formação Tech</p>
 
-## 🎯 <b>Objetivo</b>
+## Desafio Cadastro Pessoal 
 
-<br />
+Criar um formulario para registrar dados pessoais
 
-* Você deverá criar um site com formulário de Cadastro Pessoal.
-
-<br />
+ <br />
  
-## 📝<b> Orientações </b>
+## Orientações 
+Cadastro Pessoal com os campos: Nome, Cpf, Rg, Sexo, Endereco, Numero, Bairro, Cidade, Estado, Cep, Telefone Fixo, Telefone Celular.
 
-<br />
 
-* Construção da parte lógica
-* Cadastro Pessoal com os campos: Nome, Cpf, Rg, Sexo, Endereco, Numero, Bairro, Cidade, Estado, Cep, Telefone Fixo, Telefone Celular.
-
-<br />
-
-## 💼 <b> Regras de negócio </b>
+## Regras de negócio 
 
 <br />
 
@@ -27,9 +20,9 @@
 
 <br />
 
-## 🧠 <b> Extras </b>
+##  Extras
 
-<br />
+
 
 * O campo Sexo pode ser do tipo select com com as opções M = Masculino, F = Feminino
 * Usar template aplicado nas aulas
@@ -37,30 +30,13 @@
 
 <br />
 
-## 💻 <b> Sugestão de ferramentas </b>
 
-<br />
-
-* VScode [Baixar](https://code.visualstudio.com/)
-
-  Permitida a alteração de cores da interface.
-
-<br />
-
-## 👅<b> Linguagens </b> 
-<br />
-
-* HTML
-* CSS 
-* JavaScript
-
-<br />
-
-## ✔ <b> Resultado da landing page desenvolvido para esse desafio. <b>
+##  Resultado da landing page desenvolvido para esse desafio. 
 <br/>
-<br/>
-<h1 align="center" >
-<img src = "./Formulario de Registro - Itau/img/form_cadastro.png">
+<img src="assets/final.png" alt="Web Version"/>
+
+### Mobile Version
+<img src="assets/final-mobile.png" alt="Mobile Version"/>
 
 ## 👍 <b> Referencias para o desenvolvimento deste landing page (form) </b>
 
