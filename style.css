@@ -16,6 +16,13 @@ body {
     min-width: 100vw;
 }
 
+header label {
+    
+    background: #f1aa02;
+   display: inline-flex;
+    margin-left: 2px;
+  
+}
 main {
     width: 50vw;
     display: flex;
