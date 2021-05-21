@@ -8,13 +8,16 @@
     font-family: "Poppins", sans-serif;
 }
 
+
 body {
+    
     
     font-weight: 300;
     display: flex;
     min-height: 100vh;
     min-width: 100vw;
 }
+/*  Criei um cabeçalho só pra fixar o botão do tema escuro*/
 
 header label {
     
@@ -23,8 +26,41 @@ header label {
     margin-left: 5px;
   
 }
+
+
+/*  tema escuro*/
+:root {
+    --body-bg: #fafafa;
+    --body-color: #555;
+    --link-color: #222;
+    --link-color-hover: #ec5840;
+  }
+
+.dark-mode:root {
+  --body-bg: #212529;
+  --body-color: #fff;
+  --link-color: #dee2e6;
+  --link-color-hover: #3cc368;
+}
+
+  body {
+    background-color: var(--body-bg);
+    color: var(--body-color);
+  }
+  
+  a {
+    color: var(--link-color);
+  }
+  
+  a:hover {
+    color: var(--link-color-hover);
+  }
+
+  /*  Estilo do formulario*/
 main {
     width: 50vw;
+    height: 100VH;
+    margin-top: 10PX;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,84 +68,68 @@ main {
 }
 
 main h1 {
-    color: #FF4500;
-    font-size: 3rem;
+    color: #f07404;
+    font-size: 2rem;
     margin-bottom: 3rem;
     text-align: center;
-    font-weight: bolder;
 }
 
-main.logo {
+
+
+main form {
     display: flex;
-    align-content: center;
-}
-
-main .logo a {
-    text-decoration: none;
-}
-
-main .logo img {
-    width: 150px;
-    height: 130px;
-    margin-left: 3rem;
-}
-
-main .logo a:first-child img {
-    margin-left: 0;
-}
-
-section {
-    display: flex;
-
-    
-    padding: 30px 5px; /* 30px superior e inferior -  5px para os lados */
-
-    border-radius: 10px;
-
-    box-shadow: 5px 5px 15px;
-
-    max-width: 70vw;
-}
-
-section h1{
-    text-align: center;
-    font-size: 1.850rem;
-}
-
-section h3{
-    padding-top: 5px;
-}
-
-fieldset {
-    border: none;
-}
-
-fieldset:nth-child(4) {
-    display: flex;
-}
-
-fieldset:nth-child(5) {
-    display: flex;
-}
-
-fieldset:nth-child(6) {
-    display: flex;
-}
-
-fieldset:nth-child(7) {
-    display: flex;
-}
-
-fieldset:nth-child(8) {
-    display: flex;
-}
-
-fieldset:nth-child(9) {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
+main form label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+}
+
+
+main form input {
+   
+    width: 200px;
+    height: 50px;
+  
+    margin-top: 4px;
+    margin-left: 4px;
+    outline: none;
+  
+    font-size: 10PX;
+    border: 1px solid #040B18;
+    border-radius: 8px;
+}
+
+
+/*  Imagens do formulario*/
+
+section{
+    box-shadow: 5px 5px 1px;
+    
+}
+section.images {
+    width: 50vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 4rem;
+}
+
+section.images img {
+    width: 100%;
+}
+
+/*  fieldsets*/
+fieldset:nth-child(2){
+   
+    width: 100%;
+}
+
+
+/*  label ,os nomes dos campos,coloquei negrito e letra maiuscula*/
 .container input {
     margin: 10px 10px;
 
@@ -119,11 +139,9 @@ fieldset:nth-child(9) {
 
     border: none;
 
-    background-color: #ededed;
+   border-radius: 4px;
 
-    border-radius: 4px;
-
-    color: #333;
+  
 
     font-size: 18px;
 
@@ -143,7 +161,7 @@ fieldset:nth-child(9) {
 
     font-weight: 700;
     
-    color: #9d9d9d;
+   color: #808080;
 
     position: absolute; /* absolute - posiciona qualquer elmento de acordo com o elemento pai, deixando de fazer parte do fluxo comum do documento. */
 
@@ -160,66 +178,47 @@ fieldset:nth-child(9) {
     transition: 0.5s;
 }
 
-.select label {
-
-    margin-left: 10px;
-}
-
-
+/*  Botão do formulario*/
 
 main form input[type="submit"] {
     cursor: pointer;
     width: 50%;
-    margin-top: 4rem;
+    margin-top: 0.5rem;
     border: none;
     border-radius: 32px;
-    background: #FF4500;
+    background: #f07404;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: all .3s ease-in-out;
 }
 
 main form input[type="submit"]:hover {
-    background: #E8CBC0;
+    background: #f1aa02;
 }
 
-section.images {
-    width: 700px;
-    display: inline-flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding: 04rem;
- margin-right: -20px;
+
+
+  /* deixa as seções lado a lado */
+
+
+  
+fieldset {
+    border: none;
    
- 
-}
-/*  tema escuro*/
-:root {
-    --body-bg: #fafafa;
-    --body-color: #555;
-    --link-color: #222;
-    --link-color-hover: #ec5840;
-  }
-
-.dark-mode:root {
-  --body-bg: #212529;
-  --body-color: #899095;
-  --link-color: #dee2e6;
-  --link-color-hover: #3cc368;
+    display: flex;
+    
 }
 
-  body {
-    background-color: var(--body-bg);
-    color: var(--body-color);
-  }
-  
-  a {
-    color: var(--link-color);
-  }
-  
-  a:hover {
-    color: var(--link-color-hover);
-  }
+fieldset:nth-child(2) {
+    display: flex;
+    
+    width: auto;
+    
+}
+
+
+
+
 
 /* circulo gradiente*/
 section.images .circle {
@@ -234,9 +233,10 @@ section.images .circle {
 }
 
 
+
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
     section.images img {
-        width: 110%;
+        width: 90%;
     }
 
     section.images .circle {
@@ -251,55 +251,20 @@ section.images .circle {
     }
 
     main {
-        width: 100vw;
+        width: 90vw;
     }
 }
 
-
-
-@media only screen and (max-width: 250px) {
- 
-    section {
-        width: 55vw;
+@media only screen and (max-width: 450px) {
+    main h1 {
+        font-size: 12px;
     }
 
-
-    form {
-        width: 90%;
-       
-       
+    main .alternative span {
+        font-size: 0.8rem;
     }
 
-    fieldset:nth-child(4),
-    fieldset:nth-child(5),
-    fieldset:nth-child(6),
-    fieldset:nth-child(7),
-    fieldset:nth-child(8),
-    fieldset:nth-child(9) {
-        flex-direction: column;
-    }
-
-    fieldset:nth-child(9) button {
-        width: 90%;
-        margin-left: 0;
-    }
-
-     h1 {
-        font-size: 2rem;
-    }
-
-    
-
-     form label span, main form input[type="submit"] {
+    main form label span, main form input[type="submit"] {
         font-size: 1rem;
     }
 }
-}
-
-
-
-
-
-
-
-

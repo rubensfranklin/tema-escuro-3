@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <header>
     <label class="switch">CLARO|ESCURO
         <input type="checkbox" id="switch">
@@ -18,25 +19,28 @@
 <body>
     
     <main>
-        
+       
         <h1>Cadastre-se</h1>
-        <div class="logo">
-            <a href="#">
-                <img src="assets/img/itau-removebg-preview.png" alt="itau">
-            </a>
+        
+        
             
         </div>
         <section>
-            <form id="formulario" method="post" > 
+            <form nome="formulario" action="#" onsubmit='valida()' > 
               
-                <fieldset> <!--Colocar um ao lado do outro-->
+                <div class="logo">
+                    
+                        <img src="assets/img/itau-removebg-preview.png" alt="itau" style="height: 180px;">
+                </div>
+             
+                <fieldset>
                     <div class="container">
-                        <input type="text" required name="nome" autofocus>
+                        <input type="text"  name="nome" >
                         <label>Nome</label> 
                     </div>
                 </fieldset>
     
-                <fieldset> <!--Colocar um ao lado do outro-->
+                <fieldset> 
                     <div class="select">
                         <label for="sexo">Sexo</label>
                         <select name="sexo" id="sexo">
@@ -49,56 +53,58 @@
     
                 <fieldset>
                     <div class="container">
-                        <input type="text"  name="rg" autofocus>
+                        <input type="text"  name="rg" >
                         <label>RG</label> 
                     </div>
                     <div class="container">
-                        <input type="integer" required name="cpf" id="cpf_digitado" onkeydown="javascript: mascaraCPF( this, maskCPF );" autofocus>
+                        <input type="integer"  name="cpf" id="cpf"  >
                         <label>CPF</label> 
                     </div>
                 </fieldset>
     
-                <fieldset> <!--Colocar um ao lado do outro-->
+                <fieldset> 
                     <div class="container">
-                        <input type="text" required name="rua" id="logradouro" autofocus>
-                        <label for="rua">Endereço</label> 
-                    </div>
-                    <div class="container">
-                        <input type="text" required name="numero" autofocus>
-                        <label>Numero</label> 
-                    </div>
-                </fieldset>
-    
-                <fieldset>
-                    <div class="container">
-                        <input type="text" required name="bairro" id="bairro" autofocus>
-                        <label for="bairro">Bairro</label> 
-                    </div>
-                    <div class="container">
-                        <input type="text" required name="cep" id="cep"  autofocus>
+                        <input type="text"  name="cep" id="cep"  >
                         <label for="cep">Cep</label> 
                     </div>
+                    <div class="container">
+                        <input type="text"  name="rua" id="logradouro" >
+                        <label for="rua">Rua</label> 
+                    </div>
+                   
+                </fieldset>
+    
+                <fieldset>
+                     <div class="container">
+                        <input type="text"  name="numero" >
+                        <label>Numero</label> 
+                    </div>
+                    <div class="container">
+                        <input type="text"  name="bairro" id="bairro" >
+                        <label for="bairro">Bairro</label> 
+                    </div>
+                    
                 </fieldset>
     
                 <fieldset>
                     <div class="container">
-                        <input type="text" name="cidade" id="localidade" autofocus>
+                        <input type="text" name="cidade" id="localidade" >
                         <label for="cidade">cidade</label> 
                     </div>
                     <div class="container">
-                        <input type="text" name="estado" id="uf" autofocus>
+                        <input type="text" name="estado" id="uf" >
                         <label for="estado">Estado</label> 
                     </div>
                 </fieldset>
     
                 <fieldset>
                     <div class="container">
-                        <input type="text" name="telefone_fixo" maxlength="14" onKeyPress="MascaraGenerica(this, 'TELEFONE FIXO');" autofocus>
+                        <input type="text" name="telefone_fixo" maxlength="14" onKeyPress="MascaraGenerica(this, 'TELEFONE FIXO');" >
                         <label>Telefone fixo</label> 
                     </div>
                     <div class="container">
-                        <input type="text" required name="telefone_celular" maxlength="15" onKeyPress="MascaraGenerica(this, 'TELEFONE CELULAR');" autofocus>
-                        <label>Telefone celular</label> 
+                        <input type="text"  name="telefone_celular" maxlength="15" onKeyPress="MascaraGenerica(this, 'TELEFONE CELULAR');" >
+                        <label>Celular</label> 
                     </div>
                 </fieldset>
       
@@ -106,13 +112,28 @@
         </form>
     </main>
     <section class="images">
-        <img src="assets/img/capa-removebg.png" alt="capa">
+        <div class="capa">
+            <img src="assets/img/capa-removebg.png" alt="capa">
+        </div>
+      
         <div class="circle"></div>
     </section>
 </body>
-
+<script>
+    function valida(){
+        if(document.getElementById('cpf').value==''){
+            alert('Preencha o CPF');
+    
+            document.getElementById('cpf').focus();
+            return false;
+        }
+        return true;
+        }
+    
+            
+        </script>
 
 <script src="./assets/js/script.js"></script>
-<script src="./assets/js/cPF.js"></script>
+
 <script src="./assets/js/cEP.js"></script>
 </html>
