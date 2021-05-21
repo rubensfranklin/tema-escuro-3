@@ -269,3 +269,8 @@ section.images .circle {
         font-size: 1rem;
     }
 }
+
+
+.errorInput {
+    border: 2px solid rgb(207, 53, 53) !important;
+}
