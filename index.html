@@ -26,7 +26,7 @@
             
         </div>
         <section>
-            <form nome="formulario" action="#" onsubmit='valida()' > 
+            <form nome="form" action="#" method="post"  > 
               
                 <div class="logo">
                     
@@ -35,7 +35,7 @@
              
                 <fieldset>
                     <div class="container">
-                        <input type="text"  name="nome" >
+                        <input type="text"  name="nome" id="nome" required>
                         <label>Nome</label> 
                     </div>
                 </fieldset>
@@ -76,7 +76,7 @@
     
                 <fieldset>
                      <div class="container">
-                        <input type="text"  name="numero" >
+                        <input type="text"  name="numero" id="numero" >
                         <label>Numero</label> 
                     </div>
                     <div class="container">
@@ -99,11 +99,11 @@
     
                 <fieldset>
                     <div class="container">
-                        <input type="text" name="telefone_fixo" maxlength="14" onKeyPress="MascaraGenerica(this, 'TELEFONE FIXO');" >
+                        <input type="text" name="telefone_fixo" maxlength="14" id="fixo" >
                         <label>Telefone fixo</label> 
                     </div>
                     <div class="container">
-                        <input type="text"  name="telefone_celular" maxlength="15" onKeyPress="MascaraGenerica(this, 'TELEFONE CELULAR');" >
+                        <input type="text"  name="celular" maxlength="15" id="celular" >
                         <label>Celular</label> 
                     </div>
                 </fieldset>
@@ -119,21 +119,12 @@
         <div class="circle"></div>
     </section>
 </body>
-<script>
-    function valida(){
-        if(document.getElementById('cpf').value==''){
-            alert('Preencha o CPF');
-    
-            document.getElementById('cpf').focus();
-            return false;
-        }
-        return true;
-        }
-    
-            
-        </script>
-
 <script src="./assets/js/script.js"></script>
+
+   
+     
+
+<script src="./assets/js/escuro.js"></script>
 
 <script src="./assets/js/cEP.js"></script>
 </html>
