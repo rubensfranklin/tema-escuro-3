@@ -32,49 +32,18 @@ button.addEventListener('click',(event) =>{
         alert('CPF Incompleto!!!');
         } 
 
+        else {
+            cpf.classList.remove("errorInput")
+        }
+
     if(celular.value == ''){
         alert('Preencha o campo TELEFONE CELULAR apenas com numeros  e  sem começar com 0!!!');
     }
-
+else {
+        celular.classList.remove("errorInput")
+    }
     
     if(numero.value == ''){
         alert('Você esqueceu de preencher o numero da casa');
     }
-
-
 })
-
-
-
-const formEl = document.querySelector("form");
-formEl.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const formData = new FormData(formEl);
-    const formDataSerialized = Object.fromEntries(formData);
-    const jsonObject = {
-        ...formDataSerialized
-        };
-        try {
-            const response = await fetch(url, {
-            method: "POST",
-            body: JSON.stringify(jsonObject),
-            headers: {
-                "Content-Type": "application/json",
-            },
-          });
-          const json = await response.json();
-          console.log(json);
-        } catch (e) {
-        console.error(e);
-        alert("Ocorreu um erro, tente eniar o formulário novamente!");
-    }
-})
-
-
-
-
-
-
-
-
-
